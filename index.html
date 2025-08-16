@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kokisha Portfolio</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #f1f1f1;
+      line-height: 1.8;
+      display: flex;
+    }
+
+    /* Sidebar Navigation */
+    #sidebar {
+      width: 220px;
+      background: #1c1c1c;
+      height: 100vh;
+      position: fixed;
+      left: 0;
+      top: 0;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    #sidebar h1 {
+      color: #00bcd4;
+      font-size: 1.8em;
+      margin-bottom: 40px;
+    }
+    #sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    #sidebar ul li {
+      margin: 20px 0;
+    }
+    #sidebar ul li a {
+      color: #f1f1f1;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    #sidebar ul li a:hover {
+      color: #00bcd4;
+    }
+
+    /* Main Content */
+    #main {
+      margin-left: 220px;
+      padding: 20px;
+      flex: 1;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      display: flex;
+      align-items: flex-start;
+      gap: 30px;
+    }
+
+    section h2 {
+      color: #00bcd4;
+      border-bottom: 2px solid #333;
+      display: inline-block;
+      margin-bottom: 15px;
+      padding-bottom: 5px;
+    }
+
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      color: #888;
+    }
+
+    /* Home */
+    #home {
+      padding: 120px 20px;
+      display: block;
+      text-align: center;
+    }
+    #home p {
+      font-size: 2.3em;
+      font-weight: bold;
+      color: #fff;
+      text-align: center;
+    }
+
+    /* Typing animation */
+    .typing {
+      display: inline-block;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 0;
+      animation: typing 6s steps(30, end) forwards;
+      border-right: none;
+    }
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
+    /* Profile Image Circular */
+    .profile-pic {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 4px solid #00bcd4;
+      object-fit: cover;
+      box-shadow: 0px 0px 15px rgba(0,188,212,0.6);
+      flex-shrink: 0;
+    }
+
+    .section-info {
+      flex: 1;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      background: #1c1c1c;
+      margin: 10px 0;
+      padding: 12px 15px;
+      border-left: 4px solid #00bcd4;
+      border-radius: 4px;
+    }
+
+    /* Blue subheadings inside About */
+    .blue-heading {
+      color: #00bcd4;
+      margin-top: 20px;
+    }
+
+    /* Button links */
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 10px 10px 0 0;
+      background-color: #00bcd4;
+      color: #fff;
+      border: none;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background-color: #0288a7;
+    }
+
+    /* Responsive */
+    @media (max-width: 800px) {
+      section {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+      }
+      .section-info {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar Navigation -->
+  <div id="sidebar">
+    <h1>Kokisha</h1>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div id="main">
+
+    <!-- Home -->
+    <section id="home" style="display:block; text-align:center;">
+      <p>
+        Hello, I'm <b>Kokisha</b><br>
+        <span class="typing">Computer Science Engineer</span>
+      </p>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <img src="G:/img.jpg" alt="Kokisha" class="profile-pic">
+      <div class="section-info">
+        <h2>About Me</h2>
+        <p><strong>Name:</strong> Kokisha</p>
+        <p><strong>Education:</strong> B.E. in Computer Science and Engineering, University College of Engineering, Nagercoil</p>
+        <p><strong>Languages known</strong> English, Tamil</p>
+        <p><strong>Address</strong> Tamil Nadu, India</p>
+        <h3 class="blue-heading">Skills & Interests</h3>
+        <ul>
+          <li>C, Java, Python Programming</li>
+          <li>HTML and CSS</li>
+          <li>Drawing, Music, Competitions, Reading Newspaper</li>
+        </ul>
+
+        <h3 class="blue-heading">Certifications & Achievements</h3>
+        <ul>
+          <li>Basics of Python & C Programming</li>
+          <li>8 Exams in Hindi</li>
+          <li>Typewriting (English Jr & Sr, Tamil Jr – First Class with Distinction)</li>
+          <li>6 Levels in Abacus (1st & 2nd Place Awards)</li>
+        </ul>
+
+        <h3 class="blue-heading">Internships</h3>
+        <ul>
+          <li>Software Development Intern – Prodigy Infotech (1 Month)</li>
+          <li>MERN Stack Intern – Shrishti Innovative, Trivandrum (2 Weeks)</li>
+          <li>Web Development Intern – Live Stream Technologies, Coimbatore (1 Month)</li>
+        </ul>
+
+        <a class="btn" href="https://www.linkedin.com/in/kokisha04/" target="_blank">LinkedIn</a>
+        <a class="btn" href="https://github.com/Kokisha2004" target="_blank">GitHub</a>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <img src="G:\edu.jpeg" alt="Kokisha" class="profile-pic">
+      <div class="section-info">
+        <h2>Education</h2>
+        <ul>
+          <li><strong>B.E. CSE</strong> – University College of Engineering, Nagercoil (2021 - Present)</li>
+          <li><strong>HSC</strong> – Completed with 88.83% in 2021</li>
+          <li><strong>SSLC</strong> – Completed with 89% in 2019</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <img src="G:\port.png" alt="Kokisha" class="profile-pic">
+      <div class="section-info">
+        <h2>Projects</h2>
+        <ul>
+          <li>Simple Contact Management System</li>
+          <li>Online Gift Website</li>
+        </ul>
+        <a class="btn" href="https://github.com/Kokisha2004" target="_blank">View Projects</a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <img src="G:\contact.png" alt="Kokisha" class="profile-pic">
+      <div class="section-info">
+        <h2>Contact Me</h2>
+        <p><strong>Address:</strong> Tamil Nadu, India</p>
+        <p><strong>Phone:</strong> +91-7054994878</p>
+        <p><strong>Email:</strong> kokishachenthil@gmail.com</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 Kokisha Chenthil | Portfolio Website</p>
+    </footer>
+  </div>
+</body>
+</html>
